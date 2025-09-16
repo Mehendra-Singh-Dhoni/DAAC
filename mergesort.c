@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function to merge two halves
 void merge(int arr[], int left, int mid, int right) {
     int n1 = mid - left + 1;
     int n2 = right - mid;
@@ -18,7 +17,6 @@ void merge(int arr[], int left, int mid, int right) {
     while (j < n2) arr[k++] = R[j++];
 }
 
-// Merge Sort
 void mergeSort(int arr[], int left, int right) {
     if (left < right) {
         int mid = (left + right) / 2;

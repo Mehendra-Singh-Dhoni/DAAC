@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Partition function
 int partition(int arr[], int low, int high) {
     int pivot = arr[high];
     int i = low - 1;
@@ -14,7 +13,6 @@ int partition(int arr[], int low, int high) {
     return i + 1;
 }
 
-// Quick Sort
 void quickSort(int arr[], int low, int high) {
     if (low < high) {
         int pi = partition(arr, low, high);

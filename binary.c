@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-// Binary Search function
 int binarySearch(int arr[], int size, int key) {
     int low = 0, high = size - 1;
     while (low <= high) {
         int mid = (low + high) / 2;
-        if (arr[mid] == key) return mid;   // element found
+        if (arr[mid] == key) return mid;
         else if (arr[mid] < key) low = mid + 1;
         else high = mid - 1;
     }
-    return -1;  // element not found
+    return -1; 
 }
 
 int main() {
