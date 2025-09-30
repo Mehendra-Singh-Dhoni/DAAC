@@ -31,9 +31,10 @@ int main() {
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
-    printf("Enter elements:\n");
-    for (int i = 0; i < n; i++) scanf("%d", &arr[i]);
-
+    for (int i = 0; i < n; i++){
+        printf("Enter element idex %d:",i);
+        scanf("%d", &arr[i]);
+    }
     mergeSort(arr, 0, n - 1);
 
     printf("Sorted array using Merge Sort: ");
